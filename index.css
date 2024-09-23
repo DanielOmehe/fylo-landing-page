@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+
+    --color-very-dark-blue: hsl(243, 87%, 12%);
+    --color-blue: hsl(238, 22%, 44%);
+    --color-bright-blue: hsl(224,93%, 58%);
+    --color-cyan: hsl(170, 45%, 43%);
+    --color-light-grayish-blue: hsl(240, 75%, 98%);
+    --color-light-gray: hsl(0, 0%, 75%);
+
+    --font-size: 16px;
+
+    --primary-font-family: "Open Sans", sans-serif;
+
+    --secondary-font-family: "Raleway", sans-serif;;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font-family);
+}
+
+.fylo-landing-page-header{
+    width: 100%;
+    height: 100vh;
+}
+
+.fylo-landing-page-navbar{
+    width: 100%;
+    padding: 4rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fylo-landing-page-navItems{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.fylo-landing-page-navItem{
+    list-style: none;
+}
+
+.fylo-landing-page-navItem a{
+    text-decoration: none;
+    color: #000;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-landing-page-header-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 6rem;
+    gap: 3rem;
+}
+
+.fylo-landing-page-header-content-text{
+    width: 50%;
+    padding: 5rem 0;
+}
+
+.fylo-landing-page-header-content-text h1{
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+    margin-bottom: 2rem;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-landing-page-header-content-text p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.fylo-landing-header-form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.fylo-landing-header-form input{
+    width: 55%;
+    padding: 1rem;
+    border-radius: .2rem;
+    border: 1.2px solid;
+    outline: none;
+}
+
+.fylo-landing-header-form button{
+    width: 30%;
+    padding: 1rem;
+    border-radius: .2rem;
+    background-color: var(--color-bright-blue);
+    font-size: 1rem;
+    color: var(--color-light-grayish-blue);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-landing-page-header-content-illustration{
+    width: 50%;
+}
+
+.fylo-landing-page-header-content-illustration img{
+    width: 100%;
+    height: 65vh;
+}
+
+.curved-background{
+    width: 100%;
+    height: 100px;
+    background-image: url("images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    bottom: -2%;
+    z-index: 0;
+}
+
+.fylo-landing-page-content{
+    width: 100%;
+    height: fit-content;
+}
+
+.fylo-landing-page-productive{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: var(--color-light-grayish-blue);
+}
+
+.fylo-landing-page-productive-text{
+    width: 50%;
+}
+
+.fylo-landing-page-productive-text h1{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-landing-page-productive-text p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.how-fylo-works{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-bottom: 2px solid var(--color-cyan);
+    cursor: pointer;
+    font-family: var(--secondary-font-family);
+}
+
+.how-fylo-works p{
+    margin-bottom: 0;
+    color: var(--color-cyan);
+}
+
+.how-fylo-works img{
+    width: 25px;
+    height: 25px;
+}
+
+.fylo-landing-testimonial{
+    background-color: white;
+    padding: 1.5rem 2rem;
+    width: 50%;
+    box-shadow: 5px 5px 5px var(--color-light-gray);
+    border-radius: .5rem;
+}
+
+.fylo-landing-testimonial p{
+    font-size: .85rem;
+    list-style: .5rem;
+}
+
+.fylo-client{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.fylo-client h3{
+    margin: 0;
+    font-size: .9rem;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-client p{
+    margin: 0;
+    font-size: .8rem;
+}
+
+.fylo-client img{
+    border-radius: 50%;
+}
+
+.fylo-landing-page-productive-illustration{
+    width: 50%;
+    height: 80vh;
+}
+
+.fylo-landing-page-productive-illustration img{
+    width: 100%;
+    height: 100%;
+}
+
+.fylo-newsletter-section{
+    width: 100%;
+    background-color: var(--color-blue);
+    padding: 4rem 6rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.fylo-newsletter-text{
+    width: 50%;
+}
+
+.fylo-newsletter-text h2{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-family: var(--secondary-font-family);
+}
+
+.fylo-newsletter-text p{
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    padding-right: 9rem;
+    line-height: 1.5rem;
+}
+
+.fylo-newsletter-form{
+    width: 50%;
+    display: block;
+}
+
+.fylo-newsletter-form input{
+    width: 85%;
+    padding: 1rem;
+    display: block;
+    border: 1.2px solid var(--color-blue);
+    border-radius: .3rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.fylo-newsletter-form button{
+    width: 35%;
+    padding: 1rem;
+    border: 1.2px solid var(--color-blue);
+    border-radius: .3rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-bright-blue);
+    color: var(--color-light-grayish-blue);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fylo-newsletter-form input::placeholder{
+    color: var(--color-light-gray);
+}
+
+.fylo-landing-page-footer{
+    width: 100%;
+    background-color: var(--color-very-dark-blue);
+}
+
+.fylo-landing-page-footer-content{
+    width: 100%;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12rem;
+    position: relative;
+}
+
+.fylo-contact{
+    display: flex;
+    gap: 0 1rem;
+    color: var(--color-light-gray);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.fylo-footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem 10rem;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.fylo-footer-link{
+    list-style: none;
+}
+
+.fylo-footer-link a{
+    text-decoration: none;
+    color: var(--color-light-gray);
+}
+
+.fylo-social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon i{
+    margin: 0 auto;
+}
+
