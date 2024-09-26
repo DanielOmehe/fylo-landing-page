@@ -43,7 +43,7 @@ body{
     align-items: center;
     align-content: center;
     padding: 3rem 6rem;
-    gap: 6rem;
+    gap: 3rem 6rem;
 }
 
 .fylo-landing-page-navbar{
