@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-very-dark-blue);
 }
 
 body{
@@ -92,13 +93,31 @@ body{
     gap: 2rem;
 }
 
-.fylo-landing-header-form input{
+.fylo-landing-header-form .input-group{
     width: 70%;
+}
+
+.fylo-landing-header-form .input-group input{
+    width: 100%;
     padding: 1rem;
     font-size: .8rem;
     outline: none;
     border-radius: .3rem;
     border: 1px solid var(--color-very-dark-blue);
+}
+
+.fylo-landing-header-form .input-group p{
+    display: none;
+}
+
+.fylo-landing-header-form .input-group input:invalid p{
+    display: inline;
+    color: red;
+    font-size: .7rem;
+}
+
+.fylo-landing-header-form input:invalid{
+    border: 1px solid red;
 }
 
 .fylo-landing-header-form input::placeholder{
@@ -117,6 +136,14 @@ body{
     border-radius: .3rem;
     cursor: pointer;
     box-shadow: 0 5px 5px var(--color-light-gray);
+}
+
+.fylo-landing-header-form button:hover{
+    opacity: .8;
+}
+
+.fylo-landing-header-form button:focus{
+    opacity: .8;
 }
 
 .fylo-landing-page-header-content-illustration{
@@ -195,7 +222,11 @@ body{
     text-decoration: none;
     border-bottom: 1px solid var(--color-cyan);
     padding-bottom: .3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.how-fylo-works:hover{
+    opacity: .8;
 }
 
 .how-fylo-works a{
@@ -309,6 +340,14 @@ body{
     cursor: pointer;
 }
 
+.fylo-newsletter-form button:hover{
+    opacity: .8;
+}
+
+.fylo-newsletter-form button:focus{
+    opacity: .8;
+}
+
 .fylo-landing-page-footer{
     background-color: var(--color-very-dark-blue);
     padding: 6rem;
@@ -368,6 +407,10 @@ body{
     color: var(--color-light-grayish-blue);
 }
 
+.fylo-footer-links li a:hover{
+    color: var(--color-bright-blue);
+}
+
 .fylo-social-icons{
     grid-column: 3 / 4;
     display: flex;
@@ -385,4 +428,213 @@ body{
     color: var(--color-light-grayish-blue);
     border: 1.5px solid var(--color-light-grayish-blue);
     text-decoration: none;
+}
+
+.fylo-social-icons a:hover{
+    color: var(--color-bright-blue);
+    border: 1px solid var(--color-bright-blue);
+}
+
+@media (max-width: 375px){
+    .fylo-landing-page-header{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .fylo-landing-page-navbar{
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .fylo-landing-page-navbar img{
+        width: 90px;
+    }
+
+    .fylo-landing-page-navItems{
+        gap: 1rem;
+    }
+
+    .fylo-landing-page-navItem a{
+        font-size: .9rem;
+    }
+
+    .fylo-landing-page-header-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px 1fr;
+        padding: 3rem 1rem;
+    }
+
+    .fylo-landing-page-header-content-text{
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+        padding: 0;
+    }
+
+    .fylo-landing-page-header-content-illustration{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .fylo-landing-page-header-content-illustration img{
+        width: 100%;
+    }
+
+    .fylo-landing-page-header-content-text h1{
+        font-size: 2rem;
+        padding: 0 .1rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        font-family: var(--primary-font-family);
+    }
+
+    .fylo-landing-page-header-content-text p{
+        font-size: 1rem;
+        padding: 0;
+        line-height: 1.5rem;
+    }
+
+    .fylo-landing-header-form{
+        width: 100%;
+        display: block;
+    }
+
+    .fylo-landing-header-form .input-group{
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .fylo-landing-header-form .input-group input{
+        width: 100%;
+    }
+
+    .fylo-landing-header-form button{
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .curved-background{
+        background-image: url("images/bg-curve-mobile.svg");
+        width: 100%;
+        height: 40px;
+    }
+
+    .fylo-landing-page-productive-text{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+
+    .fylo-landing-page-productive-text h1{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .fylo-landing-page-productive-text p{
+        padding: 0;
+        text-align: left;
+    }
+
+    .fylo-landing-page-productive-text p.productive-paragraph-2{
+        padding: 0;
+    }
+
+    .fylo-landing-page-productive-illustration{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .fylo-landing-page-productive-illustration img{
+        width: 100%;
+    }
+
+    .fylo-landing-page-productive{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        padding: 3rem 1rem;
+    }
+
+    .how-fylo-works{
+        text-align: center;
+        margin: 1rem auto 2.5rem;
+    }
+
+    .fylo-landing-testimonial{
+        width: 100%;
+        text-align: left;
+    }
+
+    .fylo-newsletter-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 150px;
+        padding: 3rem 1rem;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .fylo-newsletter-text{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fylo-newsletter-text p{
+        padding: 0;
+    }
+
+    .fylo-newsletter-form{
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .fylo-newsletter-form input{
+        width: 100%;
+    }
+
+    .fylo-newsletter-form button{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .fylo-landing-page-footer{
+        padding: 3rem 2rem;
+        height: fit-content;
+    }
+
+    .fylo-landing-page-footer-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr 100px;
+        gap: 0;
+    }
+
+    .fylo-footer-logo-container{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .fylo-footer-links{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin: 0;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+    }
+
+    .fylo-social-icons{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        margin: 0;
+    }
+
+    .social-icon img{
+        width: 20px;
+        height: 20px;
+    }
 }
