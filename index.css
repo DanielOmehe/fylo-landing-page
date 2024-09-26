@@ -485,7 +485,7 @@ body{
     }
 
     .fylo-landing-page-header-content-text h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0 .1rem;
         margin-bottom: 1rem;
         line-height: 2rem;
@@ -493,7 +493,7 @@ body{
     }
 
     .fylo-landing-page-header-content-text p{
-        font-size: 1rem;
+        font-size: .8rem;
         padding: 0;
         line-height: 1.5rem;
     }
@@ -528,6 +528,7 @@ body{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         text-align: center;
+        height: fit-content;
     }
 
     .fylo-landing-page-productive-text h1{
@@ -555,7 +556,7 @@ body{
 
     .fylo-landing-page-productive{
         grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 250px 1fr;
         padding: 3rem 1rem;
     }
 
