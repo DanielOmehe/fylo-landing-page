@@ -42,7 +42,7 @@ body{
     grid-template-rows: 100px 70vh;
     align-items: center;
     align-content: center;
-    padding: 2rem 6rem;
+    padding: 2rem 6rem 4rem;
     gap: 3rem 6rem;
 }
 
